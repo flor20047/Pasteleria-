@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pastelería artesanal Dulce Tentación - Pasteles hechos con amor para tus momentos especiales.">
+    <meta name="author" content="Dulce Tentación">
+    <title>Dulce Tentación - Pastelería Artesanal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="header-info">
+            <h1>Dulce Tentación</h1>
+            <p>Pastelería Artesanal</p>
+            <p><i>Endulzamos tus momentos especiales.</i></p>
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <a href="#Nosotros">Nosotros</a> | 
+            <a href="#Menu">Menú</a> | 
+            <a href="#Horario">Horario</a> | 
+            <a href="#Contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Imagen del negocio -->
+        <section id="Inicio" class="caja">
+            <h2>Bienvenidos a Dulce Tentación</h2>
+            <img src="pasteleria.jpeg" alt="Fachada de la pastelería Dulce Tentación" class="img-negocio">
+            <p>En <b>Dulce Tentación</b> elaboramos pasteles artesanales con ingredientes frescos y mucho amor, pensados para cumpleaños, bodas, aniversarios y cualquier ocasión especial.</p>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="Nosotros" class="caja">
+            <h2>Nosotros</h2>
+            <p>Somos una pastelería familiar dedicada a crear pasteles únicos. Nuestro equipo combina tradición y creatividad para ofrecer productos de calidad con ingredientes frescos y un servicio cálido.</p>
+            <h3>Nuestros valores</h3>
+            <ul>
+                <li>Creatividad</li>
+                <li>Calidad</li>
+                <li>Pasión</li>
+                <li>Servicio</li>
+            </ul>
+        </section>
+
+        <!-- Menú -->
+        <section id="Menu" class="caja">
+            <h2>Nuestro Menú</h2>
+            <p>Estos son algunos de nuestros pasteles más populares:</p>
+            <table>
+                <tr>
+                    <th>Pastel</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>Bizcocho de chocolate con ganache</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td>Vainilla</td>
+                    <td>Bizcocho suave con crema pastelera</td>
+                    <td>$220</td>
+                </tr>
+                <tr>
+                    <td>Fresa</td>
+                    <td>Bizcocho con fresa natural y crema batida</td>
+                    <td>$240</td>
+                </tr>
+                <tr>
+                    <td>Red Velvet</td>
+                    <td>Pastel rojo con queso crema</td>
+                    <td>$280</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Horario -->
+        <section id="Horario" class="caja">
+            <h2>Horario de Atención</h2>
+            <table>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>9:00 am - 7:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10:00 am - 6:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Cerrado</td>
+                </tr>
+            </table>
+
+            <h3>Ubicación</h3>
+            <p>Av. de la República 123, Centro, Ciudad Juárez, Chihuahua.</p>
+            <iframe 
+                src="https://www.google.com/maps?q=Ciudad+Juarez+Chihuahua&output=embed"
+                width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- Contacto -->
+        <section id="Contacto" class="caja">
+            <h2>Contacto</h2>
+            <p>Completa el siguiente formulario y un asesor se pondrá en contacto contigo.</p>
+
+            <form id="formContacto" action="#" method="get">
+                <label for="Nombre">Nombre completo:</label>
+                <input type="text" id="Nombre" name="nombre" required>
+
+                <label for="Correo">Correo electrónico:</label>
+                <input type="email" id="Correo" name="correo" required>
+
+                <label for="Telefono">Teléfono de contacto:</label>
+                <input type="tel" id="Telefono" name="telefono" required>
+
+                <label for="Descripcion">Descripción del problema:</label>
+                <textarea id="Descripcion" name="descripcion" rows="4" required></textarea>
+                <p id="contador" class="contador">0 caracteres</p>
+
+                <input type="submit" value="Enviar solicitud">
+                <input type="reset" value="Limpiar">
+            </form>
+
+            <p id="mensajeConfirmacion" class="mensaje-exito" style="display:none;"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©️ 2026 Dulce Tentación. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
